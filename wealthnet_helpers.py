@@ -125,15 +125,13 @@ def correct_table_headers(table_temp):
     table_temp2 = copy.deepcopy(table_temp)
     df_temp = pd.DataFrame(table_temp2[1:])
 
-    # identify indices of the extra columns
     extra_columns_indices = [
         i for i, column in enumerate(df_temp.columns) 
-        if df_temp.iloc[:, column].dropna().apply(
+        if i != 0 and df_temp.iloc[:, i].dropna().apply(
             lambda x: str(x).split()[-1] if ' ' in str(x) else str(x)
         ).isin({"UHNW", "VHNW", "Deceased", "None"}).all()
     ]
-
-    # insert 'None' into column names at the identified indices
+        # insert 'None' into column names at the identified indices
     for index in extra_columns_indices:
         if table_temp2[0][index] is not None:
             table_temp2[0].insert(index, None)
