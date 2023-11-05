@@ -2,3 +2,4 @@ data/
 venve/
 __pycache__/
 config.py
+.docx
