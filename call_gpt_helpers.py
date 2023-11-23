@@ -181,7 +181,7 @@ def identify_gics_classes(df, class_list, system_message, rate_limit=80000, save
         biography = temp_df.at[i, 'Biography']
 
         prompt = f"""
-                    Read the list of Global Industry Classification Standard  (GICS) industry classes shown surrounded by 4 colon's below
+                    Read the list of Global Industry Classification Standard (GICS) industry classes shown surrounded by 4 colon's below
                     ::::
                     {class_list}
                     ::::
