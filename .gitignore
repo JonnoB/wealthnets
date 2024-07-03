@@ -1,5 +1,13 @@
 data/
-venve/
 __pycache__/
 config.py
 .docx
+figures/
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
