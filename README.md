@@ -18,4 +18,6 @@ There is also the helper file containing the functions used to call the openAI A
 
 # Citing this repo
 
-If you use this code please cite ...
+This article has been published in the journal 'Finance and Space' If this code is useful please cite 
+'The global urban elite: The sources of wealth and residential networks of the super-rich in 10 cities' 
+https://doi.org/10.1080/2833115X.2024.2378892 
